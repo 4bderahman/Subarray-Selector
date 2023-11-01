@@ -1,0 +1,40 @@
+Algorithme SubarraySelector
+
+Fonction sousTableau(tab: tableau, x: entier, y: entier)
+
+    Pour i de x à y pas 1 faire
+        Ecrire(tab[i])
+    Fin Pour
+    retourne tab
+Fin Fonction
+
+Variables:
+    tab: tableau(10):entier
+    i, x, y, a: entier
+    reponse: chaine de caractere
+
+Début
+
+    Répéter
+        Encrire("Entrez un tableau de 10 éléments:")
+        
+        Pour i de 1 à 10 Faire
+            Ecrire(f"Entrez l'élément {i}: ")
+            Lire(a)
+            tab(i) ← a
+        Fin Pour
+        
+        Ecrire("Entrez l'indice de départ:")
+        Lire(x)
+
+        ecrire("Entrez l'indice de fin:")
+        Lire(y)
+
+        ecrire(sousTableau(tab, x, y))
+
+        Ecrire("Voulez-vous saisir une nouvelle liste? (Oui/Non):")
+        Lire(reponse)
+
+    Jusqu'à reponse ≠ "oui"
+
+Fin
